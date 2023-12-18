@@ -11,7 +11,7 @@ const data= [
   close: true,
   tag: {isOpen:true, tagTitle:"Download Now", tagColor:"blue"},
   },
-  {desc: "Lorem ipsum dolor sit amet lorem20 elit.", 
+  {desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti esse tenetur voluptatem accusamus cumque! Obcaecati aliquam vel totam dolore explicabo!", 
   size:".4mb", 
   close: true,
   tag: {isOpen:true, tagTitle:"Download Now", tagColor:"green"},

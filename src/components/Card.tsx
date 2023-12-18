@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { MdOutlineAttachFile } from "react-icons/md";
 import { MdOutlineDownloadForOffline } from "react-icons/md";
 import { IoMdCloseCircleOutline } from "react-icons/io";
