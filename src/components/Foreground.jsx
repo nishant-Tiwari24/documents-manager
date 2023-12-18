@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Card from './Card'
 
 function Foreground() {
+
+  const ref = useRef(null)
   
-  const data= [
-    {desc: "Lorem ipsum dolor sit amet lorem20 elit.", 
-    size:".4mb", 
-    close: true,
-    tag: {isOpen:true, tagTitle:"Download Now", tagColor:"blue"},
+const data= [
+  {desc: "Lorem ipsum dolor sit amet lorem20 elit.", 
+  size:".4mb",
+  close: true,
+  tag: {isOpen:true, tagTitle:"Download Now", tagColor:"blue"},
   },
   {desc: "Lorem ipsum dolor sit amet lorem20 elit.", 
   size:".4mb", 
@@ -53,9 +55,9 @@ tag: {isOpen:true, tagTitle:"Download Now", tagColor:"blue"},
   ];
   
   return (
-    <div className='fixed z-[3] top-0 left-0 w-full h-full flex py-10 px-2 gap-10  flex-wrap'>
+    <div ref={ref} className='fixed z-[3] top-0 left-0 w-full h-full flex py-10 px-2 gap-10  flex-wrap'>
       {data.map((item,index)=>(
-        <Card data={item}
+        <Card data={item} reference={ref}
         />
       ))}
     </div>
